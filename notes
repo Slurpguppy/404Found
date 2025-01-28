@@ -1,0 +1,33 @@
+<h1><strong style="color: #313131; font-weight: bolder; text-align: left;">Advanced</strong> Website</h1>
+					
+                    <ul style="text-align: left;">
+                        <li>Custom domain</li>
+                        <li>Hosting</li>
+                        <li>Custom branding</li>
+                        <li>Basic Information</li>
+                        <li>Contact Form</li>
+                        <li>Mobile-Friendly Design</li>
+                        <li>Social Media Links</li>
+                        <li>Gallery or Image Section</li>
+                        <li>Basic SEO Setup</li>
+                        <li>Navigation Bar</li>
+                        <li>Privacy Policy/Terms Page (Optional)</li>
+                        <li>Call-to-Action Buttons</li>
+                      </ul>
+					
+                    <h3 style="text-align: left;"><strong style="color: #313131; font-weight: bolder; text-align: left;">Advanced</strong> Features</h3>
+                            <ul style="text-align: left;">
+                                <li>Payment Processing</li>
+                                <li>Enhanced Contact Forms (e.g., file upload, dropdowns)</li>
+                                <li>Google Analytics setup (included)</li>
+								<li>File Upload</li>
+                                <li>Advanced SEO Setup</li>
+                                <li>Dynamic Content (e.g., Blog, Portfolio)</li>
+                                <li>Social Media Integration</li>
+                                <li>Live Chat/Contact Widgets</li>
+                            </ul>
+                            <ul class="actions">
+                                <li><a href="https://form.typeform.com/to/ayFtJDgm" class="button primary icon solid fa-download">Get started!</a></li>
+                                <li><a href="#two" class="button icon solid fa-chevron-down scrolly">See pricing</a></li>
+                            </ul>
+				</div>
