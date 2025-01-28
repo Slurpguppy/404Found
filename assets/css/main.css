@@ -2774,20 +2774,7 @@ input, select, textarea {
 				margin-bottom: 0;
 			}
 
-		.spotlight:nth-child(2n) {
-			-moz-flex-direction: row-reverse;
-			-webkit-flex-direction: row-reverse;
-			-ms-flex-direction: row-reverse;
-			flex-direction: row-reverse;
-		}
-
-			.spotlight:nth-child(2n) .image {
-				margin: 0 0 0 3em;
-			}
-
-			.spotlight:nth-child(2n) .content {
-				text-align: right;
-			}
+		
 
 	@media screen and (max-width: 736px) and (orientation: landscape) {
 
@@ -4243,4 +4230,11 @@ input, select, textarea {
 	  .check-button:hover i {
 		color: #fff;
 	  }
+
+	  /* center */
+	  .cent-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	  
