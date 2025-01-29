@@ -4237,4 +4237,78 @@ input, select, textarea {
 		justify-content: center;
 		align-items: center;
 	}
-	  
+	
+	  /* Default: Hide button on larger screens (desktop/tablet) */
+	  .mob-btn {
+    display: none !important;
+}
+
+
+/* Show button on mobile (screens smaller than 768px) */
+@media (max-width: 767px) {
+    .mob-btn {
+        display: block !important; /* Make button visible on mobile */
+    }
+}
+
+
+@media (max-width: 767px) {
+    .demos-btn {
+        display: none !important;
+    }
+}
+
+
+
+/* Center button on larger screens */
+
+    .demos-btn {
+        position: absolute !important;
+       
+        transform: translate(-50%, -50%) !important;
+		background: #4696e5!important;
+		font-weight: bolder!important;
+		color: white!important;
+    }
+
+	
+@media (max-width: 767px) {
+    .get-btn {
+        display: none !important;
+    }
+}
+
+
+
+/* Center button on larger screens */
+
+    .get-btn {
+        position: absolute !important;
+        
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+		background: #4696e5!important;
+		font-weight: bolder!important;
+		color: white!important;
+    }
+
+
+@media (max-width: 767px) {
+    .con-btn {
+        display: none !important;
+    }
+}
+
+
+
+/* Center button on larger screens */
+
+    .con-btn {
+        position: absolute !important;
+        
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+		background: #4696e5!important;
+		font-weight: bolder!important;
+		color: white!important;
+    }
