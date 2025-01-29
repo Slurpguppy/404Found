@@ -6,8 +6,86 @@
 		<link rel="icon" href="images/fav.svg" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="https://ui-library-65zn.onrender.com/style.css">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* Default: Hide button on larger screens (desktop/tablet) */
+			.mob-btn {
+	  display: none !important;
+  }
+  
+  
+  /* Show button on mobile (screens smaller than 768px) */
+  @media (max-width: 767px) {
+	  .mob-btn {
+		  display: block !important; /* Make button visible on mobile */
+	  }
+  }
+  
+  
+  @media (max-width: 767px) {
+	  .demos-btn {
+		  display: none !important;
+	  }
+  }
+  
+  
+  
+  /* Center button on larger screens */
+  
+	  .demos-btn {
+		  position: absolute !important;
+		 
+		  transform: translate(-50%, -50%) !important;
+		  background: #4696e5!important;
+		  font-weight: bolder!important;
+		  color: white!important;
+	  }
+  
+	  
+  @media (max-width: 767px) {
+	  .get-btn {
+		  display: none !important;
+	  }
+  }
+  
+  
+  
+  /* Center button on larger screens */
+  
+	  .get-btn {
+		  position: absolute !important;
+		  
+		  left: 50% !important;
+		  transform: translate(-50%, -50%) !important;
+		  background: #4696e5!important;
+		  font-weight: bolder!important;
+		  color: white!important;
+	  }
+  
+  
+  @media (max-width: 767px) {
+	  .con-btn {
+		  display: none !important;
+	  }
+  }
+  
+  
+  
+  /* Center button on larger screens */
+  
+	  .con-btn {
+		  position: absolute !important;
+
+		  left: 50% !important;
+		  transform: translate(-50%, -50%) !important;
+		  background: #4696e5!important;
+		  font-weight: bolder!important;
+		  color: white!important;
+	  }
+	  </style>
 	</head>
+	
 	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X84856XWSN"></script>
 <script>
@@ -74,8 +152,10 @@
                     
 				</header>
 				<p>Check out are <span style="color: #363636; font-weight: bold;">Live Demos</span>!</p>
+				<br>
+				<div class="demos-btn btn btn-lg btn-transform"><a href="https://html5up.net/" class=" icon solid fa-chevron-right"> Live demos</a></div>
 				<ul class="actions">
-					<li style="all: unset; text-decoration: none;"><a href="https://html5up.net/" class="button primary icon solid fa-chevron-right scrolly">Live demos</a></li>
+					<li  style="all: unset; text-decoration: none;"><a href="https://html5up.net/" class="mob-btn button primary icon solid fa-chevron-right scrolly">Live demos</a></li>
 				</ul>
 			</section>
 
@@ -88,12 +168,19 @@
                     <ul><h3>Total Due Today: $<strong style="font-weight: bold;">249.99</strong></h3>
                         <li style="text-align: left;"><strong>Site Build Fee:</strong> $209.99 (one-time payment)</li>
                         <li style="text-align: left;"><strong>Hosting Fee:</strong> $40/month</li>
+						<li>Delivery Time: <strong style="font-weight: bold;">7 days</strong></li>
                       <br>
 						
 				</div>
+				<br>
+				<br>
 				<ul class="actions">
-					<li><a href="https://form.typeform.com/to/fabIvrnW" class="button primary icon solid fa-chevron-right">Get started!</a></li>
-					<li>Delivery Time: <strong style="font-weight: bold;">7 days</strong></li>
+					<div  class="get-btn btn btn-lg btn-transform"><a href="https://form.typeform.com/to/ayFtJDgm" class=" icon solid fa-chevron-right"> Order now!</a></div>
+				
+
+
+					<li><a href="https://form.typeform.com/to/ayFtJDgm" class="mob-btn button primary icon solid fa-chevron-right"><span style="all: unset; text-decoration: none; color: white!important;"> Order now!</span></a></li>
+					
 				</ul>
 			</section>
 
@@ -107,8 +194,10 @@
 						<li><span class="icon solid fa-dollar-sign"><span class="label">Budget friendly</span></span></li>
 					</ul>
 				</section>
+				<br>
 				<ul class="actions">
-					<li style="all: unset; text-decoration: none;"><a href="contact.html" class="button primary icon solid fa-comment scrolly">Contact us</a></li>
+					<div class="con-btn btn btn-lg btn-transform"><a href="contact.html" class=" icon solid fa-comment scrolly"> Contact us</a></div>
+					<li style="all: unset; text-decoration: none;"><a href="contact.html" class="mob-btn button primary icon solid fa-comment scrolly">Contact us</a></li>
 				</ul>
 			</section>
 
