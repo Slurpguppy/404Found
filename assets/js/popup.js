@@ -18,6 +18,6 @@ function hidePopup() {
 
 function handleSubmit(event) {
     event.preventDefault();
-    alert('Offer claimed!');
+    alert('Subscribed!');
     hidePopup(); // Hide the popup when form is submitted
 }
