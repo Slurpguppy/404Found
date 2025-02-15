@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>How to Create a Onload Popup with HTML, CSS and Javascrip | 404 Found</title>
+		<meta charset="utf-8" />
+		<link rel="icon" href="images/check-solid.svg" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+    <meta name="keywords" content="web development, coding blog, HTML5, CSS3, JavaScript, frontend development, backend development, React.js, Node.js, Git, SEO, programming tutorials, AI, Learn to code">
+		<link rel="stylesheet" href="https://ui-library-65zn.onrender.com/style.css">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D4B17CF2D0"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-D4B17CF2D0');
+  </script>
+	<body class="is-preload">
+
+		<!-- Home Buttons -->
+		<a href="index.html" class="home-button" title="Go Home">
+			<i class="fa fa-home" aria-hidden="true"></i>
+		  </a>
+
+		  <a href="https://wlreditor.site/" class="check-button" title="WLR Editor">
+			<i class="fa fa-code" aria-hidden="true"></i>
+		  </a>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="content">
+          <!-- Title -->
+					<h1><strong style="color: #313131; font-weight: bolder; text-align: left;">How to Create a Onload Popup with HTML, <br>CSS and Javascript : </strong> <br>A Beginner's Tutorial</h1>
+					
+                    <p>Posted: Feb 15th, 2025 | By the 404Found Team</p>
+					<ul class="actions">
+						<li><a href="#one" class="button primary icon solid fa-book scrolly">Start Read</a></li>
+						<li><a href="git and github.html" class="button icon solid fa-chevron-right scrolly">Next Article</a></li>
+					</ul>
+				</div>
+                
+				<div class="image phone"><div class="inner"><img src="images/2.png" alt="" /></div></div>
+                
+			</header>
+
+            <!-- One -->
+			<section id="one" class="mobile wrapper style2 special" style="margin-left: 25%; margin-right: 25%; margin-bottom: 2%; text-align: left!important; padding: 25px;">
+				<div style="width: 100%; text-align: center;">
+          <a href="#" class="image featured">
+              <img src="images/html-css-js.png" alt="" style="display: block; margin: 10px auto; width: 100%; height: auto;"/>
+          </a>
+      </div>
+                           
+      <header>
+        <h2>Create a Onload Popup with HTML, CSS and Javascript : A Beginner's Tutorial</h2>
+        <h3 class="text-box">Difficulty: <span style="color: rgb(47, 255, 123);">Easy</span></h3>
+        <p>Posted: Jan 15th, 2025 | By the 404Found Team</p>
+      </header>
+
+      <p>Have you ever wanted to display a popup when a webpage loads? Well, in this tutorial, we’ll teach you how to do just that using HTML, CSS, and JavaScript!</p>
+
+      <p>Feel Free to use are Built in<a style="color: #0073e6;" href="https://wlreditor.site/"> Code Editor</a>! Just make sure you use Inline code insted of Linking your files! If you don;t know how to use Inline, Check out are Tutorial <a style="color: #0073e6;" href="inline vs external.html"> Here</a>.</p>
+
+      <h2>What You’ll Learn:</h2>
+      <ul>
+        <li>How to create a simple onload popup.</li>
+        <li>Styling your popup to make it look nice.</li>
+        <li>How to close the popup using JavaScript.</li>
+      </ul>
+
+      <h2>Step 1: Setting Up the HTML Structure</h2>
+      <p>The first thing we need is a simple HTML structure for our popup. It’s going to be hidden when the page loads and will appear once the page has finished loading.</p>
+
+      <p><strong>Here's the basic HTML setup:</strong></p>
+      
+      <div class="code-container">
+        <div class="code-header">HTML Structure for Popup</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Popup on Load&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="popup" id="popup"&gt;
+      &lt;div class="popup-content"&gt;
+        &lt;h2&gt;Welcome to Our Site!&lt;/h2&gt;
+        &lt;p&gt;We are happy to have you here. Enjoy your visit!&lt;/p&gt;
+        &lt;button id="close-btn"&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+
+      <p>In the code above, we’ve created a <code>div</code> with the class "popup" that will be used as our popup container. Inside, we have another <code>div</code> for the actual content, including a heading, a paragraph, and a close button.</p>
+
+      <h2>Step 2: Styling the Popup with CSS</h2>
+      <p>Go to your <code>styles.css</code> file, or make on if you do have one yet.</p>
+      <p>Now, let's add some styling to make our popup look better. We will hide it initially and give it a cool design.</p>
+
+      <p><strong>Here's the CSS to style the popup:</strong></p>
+
+      <div class="code-container">
+        <div class="code-header">CSS for Popup Styling</div>
+        <pre><code>.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}</code></pre>
+      </div>
+
+      <p>This CSS will style the popup and center it on the screen. The background color is set to a semi-transparent black, and the popup content has a white background with some padding, rounded corners, and a box-shadow effect to give it a modern look.</p>
+
+      <h2>Step 3: Showing the Popup on Page Load</h2>
+      <p>Go to your <code>script.js</code> file, or make on if you do have one yet.</p>
+      <p>Next, we need to add the functionality that makes the popup appear when the page is loaded. We will use JavaScript to make this happen.</p>
+
+      <p><strong>Here’s the JavaScript to show the popup:</strong></p>
+
+      <div class="code-container">
+        <div class="code-header">JavaScript to Show the Popup</div>
+        <pre><code>window.onload = function() {
+  document.getElementById('popup').style.display = 'flex';
+};
+
+document.getElementById('close-btn').onclick = function() {
+  document.getElementById('popup').style.display = 'none';
+};</code></pre>
+      </div>
+
+      <p>In this JavaScript, we use the <code>window.onload</code> event to trigger the popup when the page finishes loading. The <code>document.getElementById('popup').style.display = 'flex'</code> line makes the popup visible by changing its display style to "flex". The close button is set up to hide the popup again when clicked.</p>
+
+      <h2>Step 4: How to Link the Files Together</h2>
+      <p>To make sure everything works together smoothly, you need to link your HTML, CSS, and JavaScript files correctly:</p>
+
+      <ol>
+        <li><strong>Linking the CSS file:</strong> In the <code>&lt;head&gt;</code> section of your HTML, use the <code>&lt;link&gt;</code> tag to link the CSS file. This tells the browser to apply the styles you’ve defined in the external CSS file to your HTML page.</li>
+        <li><strong>Linking the JavaScript file:</strong> At the bottom of the HTML document (just before the closing <code>&lt;/body&gt;</code> tag), use the <code>&lt;script&gt;</code> tag to link the external JavaScript file. This ensures that the JavaScript is executed after the HTML is fully loaded.</li>
+      </ol>
+
+      <p>Here’s what the linked files look like:</p>
+
+      <div class="code-container">
+        <div class="code-header">Example of Linking Files</div>
+        <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  <!-- Your HTML content here -->
+  &lt;script src="script.js"&gt;&lt;/script&gt;
+&lt;/body&gt;</code></pre>
+      </div>
+
+      <h2>Step 5: Full Example Code</h2>
+      <p>Here’s the complete code for your popup! You can copy and paste it into your own project and customize it:</p>
+
+      <div class="code-container">
+        <div class="code-header">Complete Code for Onload Popup</div>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Popup on Load&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div class="popup" id="popup"&gt;
+      &lt;div class="popup-content"&gt;
+        &lt;h2&gt;Welcome to Our Site!&lt;/h2&gt;
+        &lt;p&gt;We are happy to have you here. Enjoy your visit!&lt;/p&gt;
+        &lt;button id="close-btn"&gt;Close&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+
+      <p>With these steps, you now have a working onload popup for your website! Feel free to customize it further to suit your needs.</p>
+      <br>
+                       
+                        <div style="display: flex; align-items: center; padding: 20px; background-color: #f4f4f4; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); max-width: 600px; margin: 20px auto;">
+                            <div style="margin-right: 20px;">
+                              <img src="images/check-solid.svg" alt="John Doe" style="width: 80px; height: 80px; object-fit: cover;">
+                            </div>
+                            <div>
+                              <h3 style="font-size: 24px; margin: 0; color: #333;">404Found Team</h3>
+                              <p>Posted: Feb 15th, 2025</p>
+                              <p style="font-size: 14px; color: #555; margin-top: 10px; line-height: 1.5;">At 404Found, we are committed to providing high-quality content that keeps you well-informed in the fast-paced and constantly evolving world of technology. Our goal is to ensure you stay up-to-date with the latest trends, innovations, and insights that shape the tech landscape.</p>
+                              <div style="margin-top: 15px;">
+                                <a href="#" style="display: inline-block; margin-right: 10px; color: #0073e6; text-decoration: none; font-weight: bold;">SubReddit</a>
+								<a href="#" style="display: inline-block; margin-right: 10px; color: #0073e6; text-decoration: none; font-weight: bold;">Discord</a>
+                              </div>
+                            </div>
+                          </div>
+						  <br>
+
+                          <!-- more btn -->
+									<ul class="actions" style="display: flex; justify-content: center; align-items: center;">
+										<li><a href="git and github.html" class="button primary icon solid fa-chevron-right scrolly">Next Article</a></li>
+									</ul>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://discord.gg/v74xeTAP" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+					<li><a href="https://www.reddit.com/r/404Found/" class="icon brands fa-reddit"><span class="label">SubReddit</span></a></li>
+				</ul>
+				<p>Email: WLRDevelopment@gmail.com</p>
+				<p class="copyright">&copy; 404Found. Credits: <a href="http://html5up.net">HTML5 UP</a></p>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
